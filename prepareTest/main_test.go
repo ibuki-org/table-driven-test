@@ -14,6 +14,9 @@ func TestMain(m *testing.M) {
 }
 
 func TestA(t *testing.T) {
+	if testing.Short() {
+		t.SkipNow()
+	}
 	log.Println("TestA running")
 }
 
