@@ -1,6 +1,8 @@
 package parallel
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestAdd(t *testing.T) {
 	tests := []struct {
